@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YE | The Visionary</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -30,28 +29,21 @@
             }
         }
     </script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-brand-black text-white font-sans antialiased overflow-x-hidden selection:bg-brand-silver selection:text-black">
 
-    <!-- Custom Cursor -->
-    <div id="cursor" class="custom-cursor hidden lg:block pointer-events-none z-[100]"></div>
-    <div id="cursor-follower" class="custom-cursor-follower hidden lg:block pointer-events-none z-[100]"></div>
+        <div id="cursor" class="custom-cursor hidden lg:block pointer-events-none z-[100]"></div>
 
-    <!-- Background Mesh Gradient -->
-    <div class="fixed inset-0 z-0 pointer-events-none opacity-40 mesh-bg transition-colors duration-1000" id="global-mesh"></div>
+        <div class="fixed inset-0 z-0 pointer-events-none opacity-40 mesh-bg transition-colors duration-1000" id="global-mesh"></div>
 
-    <!-- Noise Overlay for Premium Texture -->
-    <div class="fixed inset-0 z-0 pointer-events-none opacity-20 mix-blend-overlay" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+        <div class="fixed inset-0 z-0 pointer-events-none opacity-20 mix-blend-overlay" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center mix-blend-difference">
+        <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center mix-blend-difference">
         <div class="text-3xl font-display font-black tracking-[0.2em] uppercase hover-target">YE</div>
         
-        <!-- Desktop Menu -->
-        <div class="hidden lg:flex gap-10 text-xs font-medium tracking-widest uppercase">
+                <div class="hidden lg:flex gap-10 text-xs font-medium tracking-widest uppercase">
             <a href="#prologue" class="hover-target relative overflow-hidden group">
                 <span class="block transition-transform duration-300 group-hover:-translate-y-full">Prologue</span>
                 <span class="block absolute top-full transition-transform duration-300 group-hover:-translate-y-full text-brand-silver">Prologue</span>
@@ -75,14 +67,12 @@
         </div>
     </nav>
 
-    <!-- Scroll Progress Bar -->
-    <div class="fixed top-0 left-0 w-full h-1 z-50 mix-blend-difference">
+        <div class="fixed top-0 left-0 w-full h-1 z-50 mix-blend-difference">
         <div id="scroll-progress" class="h-full bg-white w-0"></div>
     </div>
 
     <main class="relative z-10">
-        <!-- 1. Hero Section -->
-        <section id="hero" class="min-h-screen flex flex-col items-center justify-center relative px-4" data-color="purple">
+                <section id="hero" class="min-h-screen flex flex-col items-center justify-center relative px-4" data-color="purple">
             <div class="max-w-7xl mx-auto text-center z-10 w-full">
                 <p class="text-brand-silver tracking-[0.5em] text-xs md:text-sm uppercase mb-8 hero-element opacity-0 translate-y-4 font-display">A Study in Genius & Madness</p>
                 
@@ -98,8 +88,7 @@
 
         </section>
 
-        <!-- 2. Prologue: The Producer -->
-        <section id="prologue" class="py-32 md:py-64 px-6 relative" data-color="gold">
+                <section id="prologue" class="py-32 md:py-64 px-6 relative" data-color="gold">
             <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
                 <div class="lg:w-1/2">
                     <h2 class="font-display text-4xl md:text-7xl font-bold mb-8 uppercase tracking-tighter reveal-text">
@@ -115,8 +104,7 @@
                     <div class="aspect-square rounded-full overflow-hidden glass-card gradient-border p-2 relative z-10">
                         <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2670&auto=format&fit=crop" alt="MPC Drum Machine placeholder" class="w-full h-full object-cover rounded-full">
                     </div>
-                    <!-- Rotating text around image -->
-                    <div class="absolute -inset-10 pointer-events-none animate-[spin_20s_linear_infinite] flex items-center justify-center opacity-40">
+                                        <div class="absolute -inset-10 pointer-events-none animate-[spin_20s_linear_infinite] flex items-center justify-center opacity-40">
                         <svg viewBox="0 0 120 120" class="w-full h-full overflow-visible">
                             <path d="M 60, 60 m -52, 0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" id="circle" fill="none"/>
                             <text class="text-[9px] uppercase tracking-[0.25em] font-display font-bold fill-white"><textPath href="#circle" startOffset="0%">Roc-A-Fella Records • Five Beats A Day • Three Summers • </textPath></text>
@@ -126,8 +114,7 @@
             </div>
         </section>
 
-        <!-- 3. Through the Wire (Dramatic Interlude) -->
-        <section id="wire" class="py-40 relative bg-black overflow-hidden" data-color="black">
+                <section id="wire" class="py-40 relative bg-black overflow-hidden" data-color="black">
             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1620055663704-37000d14b1f4?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center opacity-10 filter blur-sm parallax-bg"></div>
             
             <div class="max-w-4xl mx-auto px-6 text-center z-10 relative wire-content">
@@ -143,19 +130,16 @@
             </div>
         </section>
 
-        <!-- 4. Horizontal Scroll: The Bear Trilogy -->
-        <section id="trilogy" class="h-screen relative overflow-hidden" data-color="purple">
+                <section id="trilogy" class="h-screen relative overflow-hidden" data-color="purple">
             <div class="trilogy-wrapper flex h-full items-center pl-10 md:pl-32 w-[300vw]">
-                <!-- Intro Card -->
-                <div class="w-screen h-full flex items-center flex-shrink-0">
+                                <div class="w-screen h-full flex items-center flex-shrink-0">
                     <div class="max-w-2xl">
                         <h2 class="text-6xl md:text-9xl font-black uppercase font-display tracking-tighter mb-8">The <br><span class="shimmer-text">Bear</span> <br>Trilogy</h2>
                         <p class="text-2xl text-gray-400 font-light">Changing the sound of hip-hop forever. No gangsta rap, just pure vulnerability, soul, and stadium anthems.</p>
                     </div>
                 </div>
 
-                <!-- Album 1 -->
-                <div class="w-screen h-[70vh] flex items-center justify-center flex-shrink-0 px-10">
+                                <div class="w-screen h-[70vh] flex items-center justify-center flex-shrink-0 px-10">
                     <div class="glass-card w-full max-w-5xl h-full rounded-3xl p-10 flex flex-col justify-end relative overflow-hidden group hover-target gradient-border">
                         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-20 filter grayscale group-hover:grayscale-0 transition-all duration-700"></div>
                         <div class="relative z-10">
@@ -166,8 +150,7 @@
                     </div>
                 </div>
 
-                <!-- Album 2 -->
-                <div class="w-screen h-[70vh] flex items-center justify-center flex-shrink-0 px-10">
+                                <div class="w-screen h-[70vh] flex items-center justify-center flex-shrink-0 px-10">
                     <div class="glass-card w-full max-w-5xl h-full rounded-3xl p-10 flex flex-col justify-end relative overflow-hidden group hover-target gradient-border">
                         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-20 filter grayscale group-hover:grayscale-0 transition-all duration-700"></div>
                         <div class="relative z-10">
@@ -178,8 +161,7 @@
                     </div>
                 </div>
 
-                <!-- Album 3 -->
-                <div class="w-screen h-[70vh] flex items-center justify-center flex-shrink-0 px-10">
+                                <div class="w-screen h-[70vh] flex items-center justify-center flex-shrink-0 px-10">
                     <div class="glass-card w-full max-w-5xl h-full rounded-3xl p-10 flex flex-col justify-end relative overflow-hidden group hover-target gradient-border">
                         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-20 filter grayscale group-hover:grayscale-0 transition-all duration-700"></div>
                         <div class="relative z-10">
@@ -192,8 +174,7 @@
             </div>
         </section>
 
-        <!-- 5. 808s and Heartbreak -->
-        <section id="808s" class="py-32 md:py-64 px-6 relative bg-brand-black" data-color="blue">
+                <section id="808s" class="py-32 md:py-64 px-6 relative bg-brand-black" data-color="blue">
             <div class="max-w-7xl mx-auto flex flex-col items-center">
                 <div class="w-full text-center mb-20">
                     <h2 class="text-[10vw] font-black uppercase font-display tracking-tighter leading-none text-transparent" style="-webkit-text-stroke: 2px #00008B;">808S &</h2>
@@ -216,8 +197,7 @@
             </div>
         </section>
 
-        <!-- 6. Text Marquee Transition -->
-        <div class="py-10 bg-brand-red overflow-hidden flex items-center -rotate-2 scale-110 relative z-20">
+                <div class="py-10 bg-brand-red overflow-hidden flex items-center -rotate-2 scale-110 relative z-20">
             <div class="marquee whitespace-nowrap flex font-display text-4xl md:text-6xl font-black uppercase tracking-widest text-black">
                 <span class="px-8">BEAUTIFUL DARK TWISTED FANTASY • EXILE IN HAWAII • MAXIMALISM •</span>
                 <span class="px-8">BEAUTIFUL DARK TWISTED FANTASY • EXILE IN HAWAII • MAXIMALISM •</span>
@@ -225,8 +205,7 @@
             </div>
         </div>
 
-        <!-- 7. MBDTF: The Magnum Opus -->
-        <section id="mbdtf" class="min-h-screen py-32 px-6 relative flex items-center justify-center" data-color="red">
+                <section id="mbdtf" class="min-h-screen py-32 px-6 relative flex items-center justify-center" data-color="red">
             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-fixed opacity-20 parallax-bg"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/80 to-transparent"></div>
             
@@ -259,8 +238,7 @@
             </div>
         </section>
 
-        <!-- 8. Yeezus & Industrial Era -->
-        <section id="yeezus" class="py-40 px-6 relative bg-[#111]" data-color="emerald">
+                <section id="yeezus" class="py-40 px-6 relative bg-[#111]" data-color="emerald">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col md:flex-row gap-12 items-center">
                     <div class="md:w-1/2">
@@ -282,8 +260,7 @@
             </div>
         </section>
 
-        <!-- 9. The Quote Generator / Interactive Philosophy -->
-        <section id="philosophy" class="min-h-screen flex flex-col items-center justify-center relative px-6 text-center" data-color="silver">
+                <section id="philosophy" class="min-h-screen flex flex-col items-center justify-center relative px-6 text-center" data-color="silver">
             <h2 class="text-sm uppercase tracking-[0.5em] text-brand-silver mb-16 font-display font-bold">The Philosophy of Ye</h2>
             
             <div id="quote-container" class="cursor-pointer hover-target p-10 max-w-4xl group">
@@ -294,10 +271,8 @@
             </div>
         </section>
 
-        <!-- 10. Donda & Conclusion -->
-        <section id="donda" class="min-h-screen relative flex flex-col items-center justify-center px-6 overflow-hidden" data-color="black">
-            <!-- White circle expanding to fill screen effect handled in JS -->
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 bg-white rounded-full mix-blend-difference z-0 transition-all duration-1000 ease-in-out" id="donda-circle"></div>
+                <section id="donda" class="min-h-screen relative flex flex-col items-center justify-center px-6 overflow-hidden" data-color="black">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 bg-white rounded-full mix-blend-difference z-0 transition-all duration-1000 ease-in-out" id="donda-circle"></div>
             
             <div class="max-w-4xl mx-auto text-center relative z-10 donda-content mix-blend-difference">
                 <h2 class="text-[12vw] font-black uppercase font-display tracking-tighter leading-none mb-10">DONDA</h2>
@@ -315,11 +290,9 @@
         </footer>
     </main>
 
-    <!-- GSAP & Plugins -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-    <!-- Custom Script -->
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>
