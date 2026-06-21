@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YE | The Visionary</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#030303',
+                            purple: '#4B0082',
+                            emerald: '#004B23',
+                            silver: '#C0C0C0',
+                            red: '#8B0000',
+                            blue: '#00008B',
+                            gold: '#B8860B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-black text-white font-sans antialiased overflow-x-hidden selection:bg-brand-silver selection:text-black">
+
+    <!-- Custom Cursor -->
+    <div id="cursor" class="custom-cursor hidden lg:block pointer-events-none z-[100]"></div>
+    <div id="cursor-follower" class="custom-cursor-follower hidden lg:block pointer-events-none z-[100]"></div>
+
+    <!-- Background Mesh Gradient -->
+    <div class="fixed inset-0 z-0 pointer-events-none opacity-40 mesh-bg transition-colors duration-1000" id="global-mesh"></div>
+
+    <!-- Noise Overlay for Premium Texture -->
+    <div class="fixed inset-0 z-0 pointer-events-none opacity-20 mix-blend-overlay" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center mix-blend-difference">
+        <div class="text-3xl font-display font-black tracking-[0.2em] uppercase hover-target">YE</div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex gap-10 text-xs font-medium tracking-widest uppercase">
+            <a href="#prologue" class="hover-target relative overflow-hidden group">
+                <span class="block transition-transform duration-300 group-hover:-translate-y-full">Prologue</span>
+                <span class="block absolute top-full transition-transform duration-300 group-hover:-translate-y-full text-brand-silver">Prologue</span>
+            </a>
+            <a href="#trilogy" class="hover-target relative overflow-hidden group">
+                <span class="block transition-transform duration-300 group-hover:-translate-y-full">The Rise</span>
+                <span class="block absolute top-full transition-transform duration-300 group-hover:-translate-y-full text-brand-silver">The Rise</span>
+            </a>
+            <a href="#808s" class="hover-target relative overflow-hidden group">
+                <span class="block transition-transform duration-300 group-hover:-translate-y-full">Heartbreak</span>
+                <span class="block absolute top-full transition-transform duration-300 group-hover:-translate-y-full text-brand-silver">Heartbreak</span>
+            </a>
+            <a href="#mbdtf" class="hover-target relative overflow-hidden group">
+                <span class="block transition-transform duration-300 group-hover:-translate-y-full">Exile</span>
+                <span class="block absolute top-full transition-transform duration-300 group-hover:-translate-y-full text-brand-silver">Exile</span>
+            </a>
+            <a href="#yeezus" class="hover-target relative overflow-hidden group">
+                <span class="block transition-transform duration-300 group-hover:-translate-y-full">Disruption</span>
+                <span class="block absolute top-full transition-transform duration-300 group-hover:-translate-y-full text-brand-silver">Disruption</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1 z-50 mix-blend-difference">
+        <div id="scroll-progress" class="h-full bg-white w-0"></div>
+    </div>
+
+    <main class="relative z-10">
+        <!-- 1. Hero Section -->
+        <section id="hero" class="min-h-screen flex flex-col items-center justify-center relative px-4" data-color="purple">
+            <div class="max-w-7xl mx-auto text-center z-10 w-full">
+                <p class="text-brand-silver tracking-[0.5em] text-xs md:text-sm uppercase mb-8 hero-element opacity-0 translate-y-4 font-display">A Study in Genius & Madness</p>
+                
+                <h1 class="font-display text-[15vw] leading-[0.8] font-black uppercase tracking-tighter mb-10 mix-blend-difference relative w-full">
+                    <span class="block shimmer-text hero-title-word">KANYE</span>
+                    <span class="block shimmer-text hero-title-word ml-12 md:ml-32">WEST</span>
+                </h1>
+                
+                <p class="text-gray-400 max-w-xl mx-auto text-lg md:text-2xl font-light hero-element opacity-0 translate-y-4">
+                    The architect of modern culture. A polarizing force who rewrote the rules of music, fashion, and self-belief.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- 2. Prologue: The Producer -->
+        <section id="prologue" class="py-32 md:py-64 px-6 relative" data-color="gold">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="font-display text-4xl md:text-7xl font-bold mb-8 uppercase tracking-tighter reveal-text">
+                        The <br><span class="text-brand-gold italic font-serif normal-case shimmer-text">Ghostwriter</span>
+                    </h2>
+                    <div class="space-y-6 text-gray-300 font-light text-lg md:text-xl">
+                        <p class="reveal-text">Before the mic, there was the MPC. In the late 90s and early 2000s, Kanye was the secret weapon behind the boards. He was crafting the soulful, sped-up vocal samples that would define an era of hip-hop.</p>
+                        <p class="reveal-text">Despite producing massive hits like Jay-Z's "Izzo (H.O.V.A.)", the industry saw him strictly as a producer. "He didn't fit the mold," they said. He wasn't street enough. He wore pink polos and carried a backpack.</p>
+                        <p class="reveal-text font-medium text-white">But Kanye knew his worth. The industry told him to stay in the background. He decided to take over the stage.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="aspect-square rounded-full overflow-hidden glass-card gradient-border p-2 relative z-10">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2670&auto=format&fit=crop" alt="MPC Drum Machine placeholder" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <!-- Rotating text around image -->
+                    <div class="absolute -inset-10 pointer-events-none animate-[spin_20s_linear_infinite] flex items-center justify-center opacity-40">
+                        <svg viewBox="0 0 120 120" class="w-full h-full overflow-visible">
+                            <path d="M 60, 60 m -52, 0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" id="circle" fill="none"/>
+                            <text class="text-[9px] uppercase tracking-[0.25em] font-display font-bold fill-white"><textPath href="#circle" startOffset="0%">Roc-A-Fella Records • Five Beats A Day • Three Summers • </textPath></text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Through the Wire (Dramatic Interlude) -->
+        <section id="wire" class="py-40 relative bg-black overflow-hidden" data-color="black">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1620055663704-37000d14b1f4?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center opacity-10 filter blur-sm parallax-bg"></div>
+            
+            <div class="max-w-4xl mx-auto px-6 text-center z-10 relative wire-content">
+                <p class="text-brand-silver text-sm uppercase tracking-[0.5em] mb-12 font-display">October 23, 2002</p>
+                <h2 class="text-5xl md:text-8xl font-black uppercase font-display tracking-tighter mb-12 leading-tight">
+                    <span class="block wire-text glitch" data-text="A NEAR">A NEAR</span>
+                    <span class="block wire-text glitch" data-text="FATAL CRASH.">FATAL CRASH.</span>
+                </h2>
+                <div class="text-xl md:text-3xl font-light text-gray-400 space-y-8 max-w-3xl mx-auto mt-12">
+                    <p class="wire-text">Driving home from a studio session, exhaustion took the wheel. A collision. A shattered jaw. Wire holding his mouth shut.</p>
+                    <p class="wire-text text-white">Most would rest. Kanye recorded a song. <br>Through the wire.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Horizontal Scroll: The Bear Trilogy -->
+        <section id="trilogy" class="h-screen relative overflow-hidden" data-color="purple">
+            <div class="trilogy-wrapper flex h-full items-center pl-10 md:pl-32 w-[300vw]">
+                <!-- Intro Card -->
+                <div class="w-screen h-full flex items-center flex-shrink-0">
+                    <div class="max-w-2xl">
+                        <h2 class="text-6xl md:text-9xl font-black uppercase font-display tracking-tighter mb-8">The <br><span class="shimmer-text">Bear</span> <br>Trilogy</h2>
+                        <p class="text-2xl text-gray-400 font-light">Changing the sound of hip-hop forever. No gangsta rap, just pure vulnerability, soul, and stadium anthems.</p>
+                    </div>
+                </div>
+
+                <!-- Album 1 -->
+                <div class="w-screen h-[70vh] flex items-center justify-center flex-shrink-0 px-10">
+                    <div class="glass-card w-full max-w-5xl h-full rounded-3xl p-10 flex flex-col justify-end relative overflow-hidden group hover-target gradient-border">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-20 filter grayscale group-hover:grayscale-0 transition-all duration-700"></div>
+                        <div class="relative z-10">
+                            <span class="text-brand-gold font-bold tracking-widest text-xl mb-2 block">2004</span>
+                            <h3 class="text-5xl md:text-7xl font-black uppercase font-display mb-4">The College Dropout</h3>
+                            <p class="text-lg text-gray-300 max-w-xl">"We all self-conscious, I'm just the first to admit it." The ultimate underdog story pressed onto wax.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Album 2 -->
+                <div class="w-screen h-[70vh] flex items-center justify-center flex-shrink-0 px-10">
+                    <div class="glass-card w-full max-w-5xl h-full rounded-3xl p-10 flex flex-col justify-end relative overflow-hidden group hover-target gradient-border">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-20 filter grayscale group-hover:grayscale-0 transition-all duration-700"></div>
+                        <div class="relative z-10">
+                            <span class="text-brand-purple font-bold tracking-widest text-xl mb-2 block">2005</span>
+                            <h3 class="text-5xl md:text-7xl font-black uppercase font-display mb-4">Late Registration</h3>
+                            <p class="text-lg text-gray-300 max-w-xl">Adding an orchestra. Elevating the sound. Solidifying his place not as a fluke, but as a maestro.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Album 3 -->
+                <div class="w-screen h-[70vh] flex items-center justify-center flex-shrink-0 px-10">
+                    <div class="glass-card w-full max-w-5xl h-full rounded-3xl p-10 flex flex-col justify-end relative overflow-hidden group hover-target gradient-border">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-20 filter grayscale group-hover:grayscale-0 transition-all duration-700"></div>
+                        <div class="relative z-10">
+                            <span class="text-brand-silver font-bold tracking-widest text-xl mb-2 block">2007</span>
+                            <h3 class="text-5xl md:text-7xl font-black uppercase font-display mb-4">Graduation</h3>
+                            <p class="text-lg text-gray-300 max-w-xl">Electronic synths, Daft Punk samples, and stadium status. Defeating 50 Cent in a legendary sales battle, ending the gangsta rap monopoly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 808s and Heartbreak -->
+        <section id="808s" class="py-32 md:py-64 px-6 relative bg-brand-black" data-color="blue">
+            <div class="max-w-7xl mx-auto flex flex-col items-center">
+                <div class="w-full text-center mb-20">
+                    <h2 class="text-[10vw] font-black uppercase font-display tracking-tighter leading-none text-transparent" style="-webkit-text-stroke: 2px #00008B;">808S &</h2>
+                    <h2 class="text-[10vw] font-black uppercase font-display tracking-tighter leading-none shimmer-text text-brand-silver">HEARTBREAK</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
+                    <div class="order-2 md:order-1 glass-card p-12 rounded-3xl gradient-border border-brand-blue/30 relative">
+                        <div class="absolute -inset-4 bg-brand-blue/20 blur-3xl rounded-full z-0 pointer-events-none"></div>
+                        <div class="relative z-10 text-gray-300 text-lg space-y-6">
+                            <p class="reveal-text">Grief. His mother passed away. His engagement ended. The bear was dead. Kanye retreated into a Roland TR-808 drum machine and Auto-Tune.</p>
+                            <p class="reveal-text">Critics hated it. "He's not rapping." But he was bleeding over cold, synthetic beats. He created a sonic landscape of isolation that would directly birth the next decade of hip-hop (Drake, The Weeknd, Travis Scott).</p>
+                            <p class="reveal-text font-serif italic text-2xl text-white mt-8">"My heart's cold, but it's beating."</p>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2 flex justify-center hover-target perspective">
+                        <div class="heart-container w-64 h-64 md:w-96 md:h-96 bg-[url('https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?q=80&w=2600&auto=format&fit=crop')] bg-cover bg-center rounded-2xl shadow-[0_0_50px_rgba(0,0,139,0.5)] transform-style-3d hover:rotate-y-12 hover:-rotate-x-12 transition-transform duration-700"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Text Marquee Transition -->
+        <div class="py-10 bg-brand-red overflow-hidden flex items-center -rotate-2 scale-110 relative z-20">
+            <div class="marquee whitespace-nowrap flex font-display text-4xl md:text-6xl font-black uppercase tracking-widest text-black">
+                <span class="px-8">BEAUTIFUL DARK TWISTED FANTASY • EXILE IN HAWAII • MAXIMALISM •</span>
+                <span class="px-8">BEAUTIFUL DARK TWISTED FANTASY • EXILE IN HAWAII • MAXIMALISM •</span>
+                <span class="px-8">BEAUTIFUL DARK TWISTED FANTASY • EXILE IN HAWAII • MAXIMALISM •</span>
+            </div>
+        </div>
+
+        <!-- 7. MBDTF: The Magnum Opus -->
+        <section id="mbdtf" class="min-h-screen py-32 px-6 relative flex items-center justify-center" data-color="red">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-fixed opacity-20 parallax-bg"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/80 to-transparent"></div>
+            
+            <div class="max-w-6xl mx-auto relative z-10 w-full">
+                <div class="text-center mb-16">
+                    <span class="text-brand-red font-bold tracking-[0.5em] text-sm md:text-xl uppercase block mb-4 font-display">The Apology</span>
+                    <h2 class="text-6xl md:text-[8rem] font-black uppercase font-serif italic mb-8 shimmer-text leading-none">The Magnum <br>Opus</h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-1 space-y-8 flex flex-col justify-center">
+                        <div class="glass-card p-8 rounded-2xl border-l-4 border-brand-red group hover-target">
+                            <h4 class="text-2xl font-bold font-display uppercase mb-2 group-hover:text-brand-red transition-colors">The Exile</h4>
+                            <p class="text-gray-400 text-sm">Following the Taylor Swift incident, public enemy #1 retreated to Oahu, Hawaii. He booked out three studio rooms for 24 hours a day.</p>
+                        </div>
+                        <div class="glass-card p-8 rounded-2xl border-l-4 border-brand-gold group hover-target">
+                            <h4 class="text-2xl font-bold font-display uppercase mb-2 group-hover:text-brand-gold transition-colors">The Rules</h4>
+                            <p class="text-gray-400 text-sm">No tweeting. No pictures. No hipster hats. Just focus. A revolving door of the greatest musical talent on earth assembling like the Avengers of rap.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-2 relative rounded-3xl overflow-hidden glass-card group hover-target aspect-video">
+                        <div class="absolute inset-0 bg-brand-red/20 group-hover:bg-transparent transition-colors duration-700 z-10 mix-blend-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2574&auto=format&fit=crop" class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-1000 parallax-img" alt="Studio placeholder">
+                        <div class="absolute bottom-0 left-0 w-full p-10 z-20 bg-gradient-to-t from-black to-transparent">
+                            <p class="text-white text-xl md:text-3xl font-serif italic font-light">"I'm living in the future so the present is my past."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Yeezus & Industrial Era -->
+        <section id="yeezus" class="py-40 px-6 relative bg-[#111]" data-color="emerald">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <h2 class="text-7xl md:text-[9rem] font-black uppercase font-display tracking-tighter mb-4 text-[#333] hover:text-white transition-colors duration-500 hover-target">YEEZUS</h2>
+                        <h3 class="text-2xl md:text-4xl text-brand-emerald font-bold mb-8 uppercase tracking-widest font-display">Minimalist Brutalism</h3>
+                        
+                        <div class="space-y-6 text-gray-400 font-light text-lg">
+                            <p class="reveal-text">He made his masterpiece, then immediately destroyed it. Yeezus was anti-music. Acid house, industrial rock, and drill beats compressed into 40 minutes of raw, aggressive energy.</p>
+                            <p class="reveal-text">No album cover. Just a clear jewel case with a red piece of tape. "With this album, we ain't dropping no single to radio. We ain't got no campaign."</p>
+                            <p class="reveal-text text-white">This era also birthed <span class="font-bold">YEEZY</span>. Partnering with Adidas, he introduced earthy, dystopian, homeless-inspired high fashion. The fashion world laughed. Then they copied him.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 w-full grid grid-cols-2 gap-4">
+                        <div class="aspect-[3/4] bg-[url('https://images.unsplash.com/photo-1617331721458-bd3bd3f9c7f8?q=80&w=2664&auto=format&fit=crop')] bg-cover bg-center rounded-lg grayscale hover:grayscale-0 transition-all duration-500 hover-target transform hover:-translate-y-2"></div>
+                        <div class="aspect-[3/4] bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center rounded-lg grayscale hover:grayscale-0 transition-all duration-500 hover-target transform translate-y-12 hover:translate-y-8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. The Quote Generator / Interactive Philosophy -->
+        <section id="philosophy" class="min-h-screen flex flex-col items-center justify-center relative px-6 text-center" data-color="silver">
+            <h2 class="text-sm uppercase tracking-[0.5em] text-brand-silver mb-16 font-display font-bold">The Philosophy of Ye</h2>
+            
+            <div id="quote-container" class="cursor-pointer hover-target p-10 max-w-4xl group">
+                <p id="quote-text" class="text-4xl md:text-7xl font-serif italic text-white transition-opacity duration-500 font-light leading-tight">
+                    "I refuse to accept other people's ideas of happiness for me. As if there's a 'one size fits all' standard for happiness."
+                </p>
+                <p class="text-brand-silver mt-12 text-sm uppercase tracking-widest font-display opacity-50 group-hover:opacity-100 transition-opacity">Click to generate thought</p>
+            </div>
+        </section>
+
+        <!-- 10. Donda & Conclusion -->
+        <section id="donda" class="min-h-screen relative flex flex-col items-center justify-center px-6 overflow-hidden" data-color="black">
+            <!-- White circle expanding to fill screen effect handled in JS -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 bg-white rounded-full mix-blend-difference z-0 transition-all duration-1000 ease-in-out" id="donda-circle"></div>
+            
+            <div class="max-w-4xl mx-auto text-center relative z-10 donda-content mix-blend-difference">
+                <h2 class="text-[12vw] font-black uppercase font-display tracking-tighter leading-none mb-10">DONDA</h2>
+                <div class="text-xl md:text-3xl font-light text-white space-y-8">
+                    <p class="reveal-text">A return to faith. Stadium listening parties where he lived inside a locker room. Ascending to the sky in Chicago.</p>
+                    <p class="reveal-text font-serif italic">"I am a man of God... constantly fighting my demons."</p>
+                    <p class="reveal-text text-sm uppercase tracking-widest mt-20 pt-20 border-t border-white/20">The enigma continues.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-16 text-center border-t border-white/5 relative z-10 bg-black">
+            <h2 class="font-display text-4xl md:text-8xl font-black uppercase mb-4 opacity-5 tracking-tighter">YEEZY YEEZY YEEZY</h2>
+            <p class="text-gray-600 text-xs md:text-sm uppercase tracking-[0.3em] font-display">© 2026 Conceptual Editorial. Not affiliated with Kanye West.</p>
+        </footer>
+    </main>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- Custom Script -->
+    <script src="main.js"></script>
+</body>
+</html>
